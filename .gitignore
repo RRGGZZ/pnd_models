@@ -1,0 +1,6 @@
+# VSCode database/cache
+.vscode/*.db
+.vscode/*.db-*
+
+# OS/editor noise
+.DS_Store
