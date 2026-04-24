@@ -34,12 +34,6 @@ This repository contains PNDbotics model files for simulation and control, inclu
   - `xhand1_left/meshes/`
   - `xhand1_right/meshes/`
 
-- `wristRollLeft/`
-  - wristRollLeft 相关 URDF 与 mesh 资产
-
-- `wristRollRight/`
-  - wristRollRight 相关 URDF 与 mesh 资产
-
 ---
 
 ## English
@@ -69,9 +63,3 @@ This repository mainly contains the following robot model assets:
   - `xhand1_right/urdf/xhand_right.urdf`
   - `xhand1_left/meshes/`
   - `xhand1_right/meshes/`
-
-- `wristRollLeft/`
-  - wristRollLeft-related URDF and mesh assets
-
-- `wristRollRight/`
-  - wristRollRight-related URDF and mesh assets
