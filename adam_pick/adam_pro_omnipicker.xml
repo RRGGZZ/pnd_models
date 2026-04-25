@@ -286,7 +286,7 @@
                                   <inertial pos="0.012508 -0.0079729 9.4339e-05" quat="0.5750328 0.5750328 0.4115061 0.4115061" mass="0.018029" diaginertia="2.758427e-06 2.3252e-06 9.5227302e-07" />
                                   <joint name="op_l_hand_narrow3_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
                                   <geom class="visual" mesh="op_l_hand_narrow3_Link" material="black" />
-                                  <geom class="collision" mesh="op_l_hand_narrow3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" />
+                                  <geom class="collision" mesh="op_l_hand_narrow3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
                                   <body name="op_l_hand_narrow4_Link" pos="0 -0.0104 0" />
                                 </body>
                               </body>
@@ -311,7 +311,7 @@
                                   <inertial pos="0.016206 0.0094593 4.7668e-05" quat="3.417519e-06 -0.5743553 -0.8186061 6.472556e-06" mass="0.035835" diaginertia="1.1646133e-05 8.0944667e-06 4.6309e-06" />
                                   <joint name="op_l_hand_wide3_joint" pos="0 0 0" axis="0 0 1" range="-3.1415927 3.1415927" class="gripper_passive" />
                                   <geom class="visual" mesh="op_l_hand_wide3_Link" material="black" />
-                                  <geom class="collision" mesh="op_l_hand_wide3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" />
+                                  <geom class="collision" mesh="op_l_hand_wide3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
                                   <body name="op_l_hand_wide4_Link" pos="0 0.0104 0" />
                                 </body>
                               </body>
@@ -392,7 +392,7 @@
                                   <inertial pos="0.012508 -0.0079729 9.4339e-05" quat="0.5750328 0.5750328 0.4115061 0.4115061" mass="0.018029" diaginertia="2.758427e-06 2.3252e-06 9.5227302e-07" />
                                   <joint name="op_r_hand_narrow3_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
                                   <geom class="visual" mesh="op_r_hand_narrow3_Link" material="black" />
-                                  <geom class="collision" mesh="op_r_hand_narrow3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" />
+                                  <geom class="collision" mesh="op_r_hand_narrow3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
                                   <body name="op_r_hand_narrow4_Link" pos="0 -0.0104 0" />
                                 </body>
                               </body>
@@ -417,7 +417,7 @@
                                   <inertial pos="0.016206 0.0094593 4.7668e-05" quat="3.417519e-06 -0.5743553 -0.8186061 6.472556e-06" mass="0.035835" diaginertia="1.1646133e-05 8.0944667e-06 4.6309e-06" />
                                   <joint name="op_r_hand_wide3_joint" pos="0 0 0" axis="0 0 1" range="-3.1415927 3.1415927" class="gripper_passive" />
                                   <geom class="visual" mesh="op_r_hand_wide3_Link" material="black" />
-                                  <geom class="collision" mesh="op_r_hand_wide3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" />
+                                  <geom class="collision" mesh="op_r_hand_wide3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
                                   <body name="op_r_hand_wide4_Link" pos="0 0.0104 0" />
                                 </body>
                               </body>
