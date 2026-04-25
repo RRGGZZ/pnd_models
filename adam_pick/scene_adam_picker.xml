@@ -1,0 +1,93 @@
+<mujoco model="adam_picker scene">
+	<include file="adam_pro_omnipicker.xml" />
+	<statistic center="0 0 1" extent="1.8" />
+	<visual>
+		<headlight diffuse="0.8 0.8 0.8" ambient="0.1 0.1 0.1" specular="0.9 0.9 0.9"/>
+		<rgba haze="0.15 0.25 0.35 1"/>
+		<global azimuth="-140" elevation="-20" offwidth="2080" offheight="1170"/>
+	</visual>
+	<asset>
+		<texture type="skybox" builtin="gradient" rgb1="1 1 1" rgb2="1 1 1" width="800" height="800"/>
+		<texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="1 1 1" rgb2="1 1 1" markrgb="0 0 0"
+		  width="300" height="300"/>
+		<material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0"/>
+		<texture type="skybox" builtin="gradient" rgb1=".4 .5 .6" rgb2="0 0 0" width="100" height="100"/>
+		<texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127"/>
+		<texture name="texplane" builtin="checker" height="512" width="512" rgb1=".2 .3 .4" rgb2=".1 .15 .2" type="2d" />
+		<material name="MatPlane" reflectance="0.5" shininess="0.01" specular="0.1" texrepeat="1 1" texture="texplane" texuniform="true" />
+		<material name="geom" texture="texgeom" texuniform="true"/>
+		<texture name="grid_tex" type="2d" builtin="checker" rgb1="0.22 0.24 0.28" rgb2="0.12 0.13 0.16" width="512" height="512" />
+		<material name="grid_mat" texture="grid_tex" texrepeat="16 16" />
+		<mesh name="coffee_table_round_mesh" file="/home/szsh/ztj/asset/coffee_table_round_01_4k.blend/.mujoco_usdc_preview/coffee_table_round_01_4k.obj" scale="1 1 1" />
+		<texture name="coffee_table_round_tex" type="2d" file="/home/szsh/ztj/asset/.mujoco_texture_cache/coffee_table_round_01_diff_4k_for_mujoco.png" />
+		<material name="coffee_table_round_mat" rgba="0.24 0.23 0.22 1" specular="0.219250" shininess="0.267450" reflectance="0.081063" texture="coffee_table_round_tex" texuniform="false" texrepeat="1 1" />
+		<mesh name="brass_pot_mesh" file="/home/szsh/ztj/asset/brass_pot_02_4k.blend/.mujoco_usdc_preview/brass_pot_02_4k.obj" scale="1 1 1" />
+		<texture name="brass_pot_tex" type="2d" file="/home/szsh/ztj/asset/.mujoco_texture_cache/brass_pot_02_diff_4k_for_mujoco.png" />
+		<material name="brass_pot_mat" rgba="0.72 0.52 0.28 1" specular="0.689375" shininess="0.790250" reflectance="0.303750" texture="brass_pot_tex" texuniform="false" texrepeat="1 1" />
+		<mesh name="food_wiki_mesh" file="/home/szsh/ztj/asset/food_kiwi_01_4k.blend/.mujoco_usdc_preview/food_kiwi_01_4k.obj" scale="1 1 1" />
+		<texture name="food_wiki_tex" type="2d" file="/home/szsh/ztj/asset/.mujoco_texture_cache/food_kiwi_01_diff_4k_for_mujoco.png" />
+		<material name="food_wiki_mat" rgba="0.3 0.52 0.18 1" specular="0.292000" shininess="0.462500" reflectance="0.075000" texture="food_wiki_tex" texuniform="false" texrepeat="1 1" />
+		<mesh name="sweet_potato_mesh" file="/home/szsh/ztj/asset/sweet_potato_4k.blend/.mujoco_usdc_preview/sweet_potato_4k.obj" scale="1 1 1" />
+		<texture name="sweet_potato_tex" type="2d" file="/home/szsh/ztj/asset/.mujoco_texture_cache/sweet_potato_diff_4k_for_mujoco.png" />
+		<material name="sweet_potato_mat" rgba="0.56 0.34 0.2 1" specular="0.162675" shininess="0.238550" reflectance="0.037250" texture="sweet_potato_tex" texuniform="false" texrepeat="1 1" />
+	
+	</asset>
+	<worldbody>
+		<geom name="floor" size="0 0 0.01" type="plane" material="groundplane" contype="1" conaffinity="0" priority="1"
+		  friction="0.6" condim="3"/>
+	
+			<light diffuse=".5 .5 .5" pos="-3 -3 5" dir="3 3 -5" castshadow="true"/>
+		<camera name="front" pos="0 -2.0 1.2" xyaxes="1 0 0 0 0.6 1" />
+		<body name="coffee_table_round_body" pos="1 0 0.002377" quat="0.707107 0.707107 0 0">
+			<geom name="coffee_table_round_geom" type="mesh" mesh="coffee_table_round_mesh" material="coffee_table_round_mat" mass="14.0" condim="3" friction="0.75 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" />
+		</body>
+		<body name="brass_pot_body" pos="1.054503 0.032452 0.49119" quat="0.5846 0.5846 -0.397797 -0.397797">
+			<joint name="brass_pot_body_free" type="free" />
+			<geom name="brass_pot_body_visual" type="mesh" mesh="brass_pot_mesh" material="brass_pot_mat" mass="0" contype="0" conaffinity="0" />
+			<body name="brass_pot_body_proxy" pos="0 0 0" quat="0.707107 -0.707107 0 0">
+				<geom name="brass_pot_body_bottom_col" type="cylinder" size="0.139955 0.004000" pos="0 0 0.004819" mass="0.8" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_0" type="capsule" size="0.006000 0.045000" pos="0.145955 0.000000 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_1" type="capsule" size="0.006000 0.045000" pos="0.143150 0.028474 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_2" type="capsule" size="0.006000 0.045000" pos="0.134845 0.055855 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_3" type="capsule" size="0.006000 0.045000" pos="0.121357 0.081088 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_4" type="capsule" size="0.006000 0.045000" pos="0.103206 0.103206 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_5" type="capsule" size="0.006000 0.045000" pos="0.081088 0.121357 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_6" type="capsule" size="0.006000 0.045000" pos="0.055855 0.134845 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_7" type="capsule" size="0.006000 0.045000" pos="0.028474 0.143150 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_8" type="capsule" size="0.006000 0.045000" pos="0.000000 0.145955 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_9" type="capsule" size="0.006000 0.045000" pos="-0.028474 0.143150 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_10" type="capsule" size="0.006000 0.045000" pos="-0.055855 0.134845 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_11" type="capsule" size="0.006000 0.045000" pos="-0.081088 0.121357 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_12" type="capsule" size="0.006000 0.045000" pos="-0.103206 0.103206 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_13" type="capsule" size="0.006000 0.045000" pos="-0.121357 0.081088 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_14" type="capsule" size="0.006000 0.045000" pos="-0.134845 0.055855 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_15" type="capsule" size="0.006000 0.045000" pos="-0.143150 0.028474 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_16" type="capsule" size="0.006000 0.045000" pos="-0.145955 0.000000 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_17" type="capsule" size="0.006000 0.045000" pos="-0.143150 -0.028474 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_18" type="capsule" size="0.006000 0.045000" pos="-0.134845 -0.055855 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_19" type="capsule" size="0.006000 0.045000" pos="-0.121357 -0.081088 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_20" type="capsule" size="0.006000 0.045000" pos="-0.103206 -0.103206 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_21" type="capsule" size="0.006000 0.045000" pos="-0.081088 -0.121357 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_22" type="capsule" size="0.006000 0.045000" pos="-0.055855 -0.134845 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_23" type="capsule" size="0.006000 0.045000" pos="-0.028474 -0.143150 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_24" type="capsule" size="0.006000 0.045000" pos="-0.000000 -0.145955 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_25" type="capsule" size="0.006000 0.045000" pos="0.028474 -0.143150 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_26" type="capsule" size="0.006000 0.045000" pos="0.055855 -0.134845 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_27" type="capsule" size="0.006000 0.045000" pos="0.081088 -0.121357 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_28" type="capsule" size="0.006000 0.045000" pos="0.103206 -0.103206 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_29" type="capsule" size="0.006000 0.045000" pos="0.121357 -0.081088 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_30" type="capsule" size="0.006000 0.045000" pos="0.134845 -0.055855 0.053819" rgba="1 1 1 0" />
+				<geom mass="0" condim="3" friction="0.9 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" name="brass_pot_body_wall_31" type="capsule" size="0.006000 0.045000" pos="0.143150 -0.028474 0.053819" rgba="1 1 1 0" />
+			</body>
+		</body>
+		<body name="food_wiki_body_1" pos="1.091144 -0.163449 0.528311" quat="0.139412 0 0 0.990235">
+			<joint name="food_wiki_body_1_free" type="free" />
+			<geom name="food_wiki_body_1_geom" type="mesh" mesh="food_wiki_mesh" material="food_wiki_mat" mass="0.06" condim="3" friction="1 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" />
+		</body>
+		<body name="sweet_potato_body_1" pos="1.165225 -0.169318 0.524187" quat="0.338731 0 0 0.940883">
+			<joint name="sweet_potato_body_1_free" type="free" />
+			<geom name="sweet_potato_body_1_geom" type="mesh" mesh="sweet_potato_mesh" material="sweet_potato_mat" mass="0.1" condim="3" friction="1 0.04 0.015" solref="0.05 0.5" solimp="0.9 0.95 0.001" />
+		</body>
+	</worldbody>
+	<option timestep="0.0005" solver="Newton" iterations="200" ls_iterations="100"/>
+</mujoco>
