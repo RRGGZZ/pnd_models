@@ -11,15 +11,6 @@
     <default class="joint_motor">
       <joint damping="0.05" armature="0.05" frictionloss="0.1"/>
     </default>
-    <!-- Active gripper joint: has a motor, needs damping to stabilize PD control -->
-    <default class="gripper_active">
-      <joint damping="0.05" armature="0.02" frictionloss="0.01"/>
-    </default>
-    <!-- Passive gripper joints: no actuator, driven only by equality constraints.
-         High damping prevents the inertia-spring (equality soft constraint) from oscillating. -->
-    <default class="gripper_passive">
-      <joint damping="0.05" armature="0.01"/>
-    </default>
   </default>
   <compiler angle="radian" meshdir="assets/" />
   <asset>
@@ -474,18 +465,6 @@
     <jointpos name="pos_wristYaw_Left" joint="wristYaw_Left" />
     <jointpos name="pos_wristPitch_Left" joint="wristPitch_Left" />
     <jointpos name="pos_wristRoll_Left" joint="wristRoll_Left" />
-    <!-- <jointpos name="pos_L_thumb_MCP_joint1" joint="L_thumb_MCP_joint1" /> -->
-    <!-- <jointpos name="pos_L_thumb_MCP_joint2" joint="L_thumb_MCP_joint2" /> -->
-    <!-- <jointpos name="pos_L_thumb_PIP_joint" joint="L_thumb_PIP_joint" /> -->
-    <!-- <jointpos name="pos_L_thumb_DIP_joint" joint="L_thumb_DIP_joint" /> -->
-    <!-- <jointpos name="pos_L_index_MCP_joint" joint="L_index_MCP_joint" /> -->
-    <!-- <jointpos name="pos_L_index_DIP_joint" joint="L_index_DIP_joint" /> -->
-    <!-- <jointpos name="pos_L_middle_MCP_joint" joint="L_middle_MCP_joint" /> -->
-    <!-- <jointpos name="pos_L_middle_DIP_joint" joint="L_middle_DIP_joint" /> -->
-    <!-- <jointpos name="pos_L_ring_MCP_joint" joint="L_ring_MCP_joint" /> -->
-    <!-- <jointpos name="pos_L_ring_DIP_joint" joint="L_ring_DIP_joint" /> -->
-    <!-- <jointpos name="pos_L_pinky_MCP_joint" joint="L_pinky_MCP_joint" /> -->
-    <!-- <jointpos name="pos_L_pinky_DIP_joint" joint="L_pinky_DIP_joint" /> -->
     <jointpos name="pos_shoulderPitch_Right" joint="shoulderPitch_Right" />
     <jointpos name="pos_shoulderRoll_Right" joint="shoulderRoll_Right" />
     <jointpos name="pos_shoulderYaw_Right" joint="shoulderYaw_Right" />
@@ -493,18 +472,6 @@
     <jointpos name="pos_wristYaw_Right" joint="wristYaw_Right" />
     <jointpos name="pos_wristPitch_Right" joint="wristPitch_Right" />
     <jointpos name="pos_wristRoll_Right" joint="wristRoll_Right" />
-    <!-- <jointpos name="pos_R_thumb_MCP_joint1" joint="R_thumb_MCP_joint1" /> -->
-    <!-- <jointpos name="pos_R_thumb_MCP_joint2" joint="R_thumb_MCP_joint2" /> -->
-    <!-- <jointpos name="pos_R_thumb_PIP_joint" joint="R_thumb_PIP_joint" /> -->
-    <!-- <jointpos name="pos_R_thumb_DIP_joint" joint="R_thumb_DIP_joint" /> -->
-    <!-- <jointpos name="pos_R_index_MCP_joint" joint="R_index_MCP_joint" /> -->
-    <!-- <jointpos name="pos_R_index_DIP_joint" joint="R_index_DIP_joint" /> -->
-    <!-- <jointpos name="pos_R_middle_MCP_joint" joint="R_middle_MCP_joint" /> -->
-    <!-- <jointpos name="pos_R_middle_DIP_joint" joint="R_middle_DIP_joint" /> -->
-    <!-- <jointpos name="pos_R_ring_MCP_joint" joint="R_ring_MCP_joint" /> -->
-    <!-- <jointpos name="pos_R_ring_DIP_joint" joint="R_ring_DIP_joint" /> -->
-    <!-- <jointpos name="pos_R_pinky_MCP_joint" joint="R_pinky_MCP_joint" /> -->
-    <!-- <jointpos name="pos_R_pinky_DIP_joint" joint="R_pinky_DIP_joint" /> -->
     <jointpos name="pos_neckYaw" joint="neckYaw" />
     <jointpos name="pos_neckPitch" joint="neckPitch" />
     <actuatorpos name="actuatorpos_idx31_gripper_l_inner_joint1" actuator="position_idx31_gripper_l_inner_joint1" />
@@ -535,18 +502,6 @@
     <jointvel name="vel_wristYaw_Left" joint="wristYaw_Left" />
     <jointvel name="vel_wristPitch_Left" joint="wristPitch_Left" />
     <jointvel name="vel_wristRoll_Left" joint="wristRoll_Left" />
-    <!-- <jointvel name="vel_L_thumb_MCP_joint1" joint="L_thumb_MCP_joint1" /> -->
-    <!-- <jointvel name="vel_L_thumb_MCP_joint2" joint="L_thumb_MCP_joint2" /> -->
-    <!-- <jointvel name="vel_L_thumb_PIP_joint" joint="L_thumb_PIP_joint" /> -->
-    <!-- <jointvel name="vel_L_thumb_DIP_joint" joint="L_thumb_DIP_joint" /> -->
-    <!-- <jointvel name="vel_L_index_MCP_joint" joint="L_index_MCP_joint" /> -->
-    <!-- <jointvel name="vel_L_index_DIP_joint" joint="L_index_DIP_joint" /> -->
-    <!-- <jointvel name="vel_L_middle_MCP_joint" joint="L_middle_MCP_joint" /> -->
-    <!-- <jointvel name="vel_L_middle_DIP_joint" joint="L_middle_DIP_joint" /> -->
-    <!-- <jointvel name="vel_L_ring_MCP_joint" joint="L_ring_MCP_joint" /> -->
-    <!-- <jointvel name="vel_L_ring_DIP_joint" joint="L_ring_DIP_joint" /> -->
-    <!-- <jointvel name="vel_L_pinky_MCP_joint" joint="L_pinky_MCP_joint" /> -->
-    <!-- <jointvel name="vel_L_pinky_DIP_joint" joint="L_pinky_DIP_joint" /> -->
     <jointvel name="vel_shoulderPitch_Right" joint="shoulderPitch_Right" />
     <jointvel name="vel_shoulderRoll_Right" joint="shoulderRoll_Right" />
     <jointvel name="vel_shoulderYaw_Right" joint="shoulderYaw_Right" />
@@ -554,18 +509,6 @@
     <jointvel name="vel_wristYaw_Right" joint="wristYaw_Right" />
     <jointvel name="vel_wristPitch_Right" joint="wristPitch_Right" />
     <jointvel name="vel_wristRoll_Right" joint="wristRoll_Right" />
-    <!-- <jointvel name="vel_R_thumb_MCP_joint1" joint="R_thumb_MCP_joint1" /> -->
-    <!-- <jointvel name="vel_R_thumb_MCP_joint2" joint="R_thumb_MCP_joint2" /> -->
-    <!-- <jointvel name="vel_R_thumb_PIP_joint" joint="R_thumb_PIP_joint" /> -->
-    <!-- <jointvel name="vel_R_thumb_DIP_joint" joint="R_thumb_DIP_joint" /> -->
-    <!-- <jointvel name="vel_R_index_MCP_joint" joint="R_index_MCP_joint" /> -->
-    <!-- <jointvel name="vel_R_index_DIP_joint" joint="R_index_DIP_joint" /> -->
-    <!-- <jointvel name="vel_R_middle_MCP_joint" joint="R_middle_MCP_joint" /> -->
-    <!-- <jointvel name="vel_R_middle_DIP_joint" joint="R_middle_DIP_joint" /> -->
-    <!-- <jointvel name="vel_R_ring_MCP_joint" joint="R_ring_MCP_joint" /> -->
-    <!-- <jointvel name="vel_R_ring_DIP_joint" joint="R_ring_DIP_joint" /> -->
-    <!-- <jointvel name="vel_R_pinky_MCP_joint" joint="R_pinky_MCP_joint" /> -->
-    <!-- <jointvel name="vel_R_pinky_DIP_joint" joint="R_pinky_DIP_joint" /> -->
     <jointvel name="vel_neckYaw" joint="neckYaw" />
     <jointvel name="vel_neckPitch" joint="neckPitch" />
     <jointvel name="jointvel_idx41_gripper_l_outer_joint1" joint="idx41_gripper_l_outer_joint1" />
@@ -594,18 +537,6 @@
     <jointactuatorfrc name="force_wristYaw_Left" joint="wristYaw_Left" />
     <jointactuatorfrc name="force_wristPitch_Left" joint="wristPitch_Left" />
     <jointactuatorfrc name="force_wristRoll_Left" joint="wristRoll_Left" />
-    <!-- <jointactuatorfrc name="force_L_thumb_MCP_joint1" joint="L_thumb_MCP_joint1" /> -->
-    <!-- <jointactuatorfrc name="force_L_thumb_MCP_joint2" joint="L_thumb_MCP_joint2" /> -->
-    <!-- <jointactuatorfrc name="force_L_thumb_PIP_joint" joint="L_thumb_PIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_thumb_DIP_joint" joint="L_thumb_DIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_index_MCP_joint" joint="L_index_MCP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_index_DIP_joint" joint="L_index_DIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_middle_MCP_joint" joint="L_middle_MCP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_middle_DIP_joint" joint="L_middle_DIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_ring_MCP_joint" joint="L_ring_MCP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_ring_DIP_joint" joint="L_ring_DIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_pinky_MCP_joint" joint="L_pinky_MCP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_L_pinky_DIP_joint" joint="L_pinky_DIP_joint" /> -->
     <jointactuatorfrc name="force_shoulderPitch_Right" joint="shoulderPitch_Right" />
     <jointactuatorfrc name="force_shoulderRoll_Right" joint="shoulderRoll_Right" />
     <jointactuatorfrc name="force_shoulderYaw_Right" joint="shoulderYaw_Right" />
@@ -613,18 +544,6 @@
     <jointactuatorfrc name="force_wristYaw_Right" joint="wristYaw_Right" />
     <jointactuatorfrc name="force_wristPitch_Right" joint="wristPitch_Right" />
     <jointactuatorfrc name="force_wristRoll_Right" joint="wristRoll_Right" />
-    <!-- <jointactuatorfrc name="force_R_thumb_MCP_joint1" joint="R_thumb_MCP_joint1" /> -->
-    <!-- <jointactuatorfrc name="force_R_thumb_MCP_joint2" joint="R_thumb_MCP_joint2" /> -->
-    <!-- <jointactuatorfrc name="force_R_thumb_PIP_joint" joint="R_thumb_PIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_thumb_DIP_joint" joint="R_thumb_DIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_index_MCP_joint" joint="R_index_MCP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_index_DIP_joint" joint="R_index_DIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_middle_MCP_joint" joint="R_middle_MCP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_middle_DIP_joint" joint="R_middle_DIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_ring_MCP_joint" joint="R_ring_MCP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_ring_DIP_joint" joint="R_ring_DIP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_pinky_MCP_joint" joint="R_pinky_MCP_joint" /> -->
-    <!-- <jointactuatorfrc name="force_R_pinky_DIP_joint" joint="R_pinky_DIP_joint" /> -->
     <jointactuatorfrc name="force_neckYaw" joint="neckYaw" />
     <jointactuatorfrc name="force_neckPitch" joint="neckPitch" />
     <jointactuatorfrc name="torque_idx31_gripper_l_inner_joint1" joint="idx31_gripper_l_inner_joint1" />
