@@ -71,15 +71,20 @@
     <mesh name="wristYawLeft_1" file="wristYawLeft_1.obj" />
     <mesh name="wristPitchLeft" file="../meshes_stl_0.25/wristPitchLeft.STL" />
     <mesh name="wristRollLeft" file="../meshes_stl_0.25/wristRoll.STL" />
-    <mesh name="op_l_base_link" file="../meshes_stl_0.25/base_link.STL" />
-    <mesh name="op_l_hand_narrow1_Link" file="../meshes_stl_0.25/narrow1_Link.STL" />
-    <mesh name="op_l_hand_narrow2_Link" file="../meshes_stl_0.25/narrow2_Link.STL" />
-    <mesh name="op_l_hand_narrow3_Link" file="../meshes_stl_0.25/narrow3_Link.STL" />
-    <mesh name="op_l_hand_narrow_loop_Link" file="../meshes_stl_0.25/narrow_loop_Link.STL" />
-    <mesh name="op_l_hand_wide1_Link" file="../meshes_stl_0.25/wide1_Link.STL" />
-    <mesh name="op_l_hand_wide2_Link" file="../meshes_stl_0.25/wide2_Link.STL" />
-    <mesh name="op_l_hand_wide3_Link" file="../meshes_stl_0.25/wide3_Link.STL" />
-    <mesh name="op_l_hand_wide_loop_Link" file="../meshes_stl_0.25/wide_loop_Link.STL" />
+    <mesh name="gripper_l_base_link_visual" file="gripper_l_base_link_visuals_gripper_base_link_mesh.obj" />
+    <mesh name="gripper_l_base_link_collision" file="gripper_l_base_link_collisions_gripper_base_link_mesh.obj" />
+    <mesh name="gripper_l_inner_link1_visual" file="gripper_l_inner_link1_visuals_inner_link1_mesh.obj" />
+    <mesh name="gripper_l_inner_link1_collision" file="gripper_l_inner_link1_collisions_inner_link1_mesh.obj" />
+    <mesh name="gripper_l_inner_link3_visual" file="gripper_l_inner_link3_visuals_inner_link3_mesh.obj" />
+    <mesh name="gripper_l_inner_link3_collision" file="gripper_l_inner_link3_collisions_inner_link3_mesh.obj" />
+    <mesh name="gripper_l_inner_link4_visual" file="gripper_l_inner_link4_visuals_inner_link4_mesh.obj" />
+    <mesh name="gripper_l_inner_link4_collision" file="gripper_l_inner_link4_collisions_inner_link4_mesh.obj" />
+    <mesh name="gripper_l_outer_link1_visual" file="gripper_l_outer_link1_visuals_outer_link1_mesh.obj" />
+    <mesh name="gripper_l_outer_link1_collision" file="gripper_l_outer_link1_collisions_outer_link1_mesh.obj" />
+    <mesh name="gripper_l_outer_link3_visual" file="gripper_l_outer_link3_visuals_outer_link3_mesh.obj" />
+    <mesh name="gripper_l_outer_link3_collision" file="gripper_l_outer_link3_collisions_outer_link3_mesh.obj" />
+    <mesh name="gripper_l_outer_link4_visual" file="gripper_l_outer_link4_visuals_outer_link4_mesh.obj" />
+    <mesh name="gripper_l_outer_link4_collision" file="gripper_l_outer_link4_collisions_outer_link4_mesh.obj" />
     <mesh name="shoulderPitchRight" file="shoulderPitchRight.obj" />
     <mesh name="shoulderRollRight_0" file="shoulderRollRight_0.obj" />
     <mesh name="shoulderRollRight_1" file="shoulderRollRight_1.obj" />
@@ -91,15 +96,20 @@
     <mesh name="wristYawRight_1" file="wristYawRight_1.obj" />
     <mesh name="wristPitchRight" file="../meshes_stl_0.25/wristPitchRight.STL" />
     <mesh name="wristRollRight" file="../meshes_stl_0.25/wristRoll.STL" />
-    <mesh name="op_r_base_link" file="../meshes_stl_0.25/base_link.STL" />
-    <mesh name="op_r_hand_narrow1_Link" file="../meshes_stl_0.25/narrow1_Link.STL" />
-    <mesh name="op_r_hand_narrow2_Link" file="../meshes_stl_0.25/narrow2_Link.STL" />
-    <mesh name="op_r_hand_narrow3_Link" file="../meshes_stl_0.25/narrow3_Link.STL" />
-    <mesh name="op_r_hand_narrow_loop_Link" file="../meshes_stl_0.25/narrow_loop_Link.STL" />
-    <mesh name="op_r_hand_wide1_Link" file="../meshes_stl_0.25/wide1_Link.STL" />
-    <mesh name="op_r_hand_wide2_Link" file="../meshes_stl_0.25/wide2_Link.STL" />
-    <mesh name="op_r_hand_wide3_Link" file="../meshes_stl_0.25/wide3_Link.STL" />
-    <mesh name="op_r_hand_wide_loop_Link" file="../meshes_stl_0.25/wide_loop_Link.STL" />
+    <mesh name="gripper_r_base_link_visual" file="gripper_r_base_link_visuals_gripper_base_link_mesh.obj" />
+    <mesh name="gripper_r_base_link_collision" file="gripper_r_base_link_collisions_gripper_base_link_mesh.obj" />
+    <mesh name="gripper_r_inner_link1_visual" file="gripper_r_inner_link1_visuals_inner_link1_mesh.obj" />
+    <mesh name="gripper_r_inner_link1_collision" file="gripper_r_inner_link1_collisions_inner_link1_mesh.obj" />
+    <mesh name="gripper_r_inner_link3_visual" file="gripper_r_inner_link3_visuals_inner_link3_mesh.obj" />
+    <mesh name="gripper_r_inner_link3_collision" file="gripper_r_inner_link3_collisions_inner_link3_mesh.obj" />
+    <mesh name="gripper_r_inner_link4_visual" file="gripper_r_inner_link4_visuals_inner_link4_mesh.obj" />
+    <mesh name="gripper_r_inner_link4_collision" file="gripper_r_inner_link4_collisions_inner_link4_mesh.obj" />
+    <mesh name="gripper_r_outer_link1_visual" file="gripper_r_outer_link1_visuals_outer_link1_mesh.obj" />
+    <mesh name="gripper_r_outer_link1_collision" file="gripper_r_outer_link1_collisions_outer_link1_mesh.obj" />
+    <mesh name="gripper_r_outer_link3_visual" file="gripper_r_outer_link3_visuals_outer_link3_mesh.obj" />
+    <mesh name="gripper_r_outer_link3_collision" file="gripper_r_outer_link3_collisions_outer_link3_mesh.obj" />
+    <mesh name="gripper_r_outer_link4_visual" file="gripper_r_outer_link4_visuals_outer_link4_mesh.obj" />
+    <mesh name="gripper_r_outer_link4_collision" file="gripper_r_outer_link4_collisions_outer_link4_mesh.obj" />
     <mesh name="neckYaw_link" file="neckYaw_link.obj" />
     <mesh name="neckPitch_link" file="neckPitch_link.obj" />
   </asset>
@@ -268,69 +278,66 @@
                           <joint name="wristRoll_Left" pos="0 0 0" axis="1 0 0" range="-0.96 0.96" actuatorfrcrange="-6.4 6.4" class="joint_motor" />
                           <geom mesh="wristRollLeft" material="silver" class="visual" />
                           <geom mesh="wristRollLeft" class="collision" />
-                          <body name="op_l_base_link" pos="0 0 -0.049" quat="0.0007963267 0 0.9999997 0">
-                            <inertial pos="-5.52e-05 1.2341e-05 0.03296193" quat="0.9999989 -7.377385e-05 0.001447909 -0.0002697056" mass="0.25641368" diaginertia="0.00046351302 0.00044525 0.00010437698" />
-                            <geom class="visual" mesh="op_l_base_link" material="black" />
-                            <geom class="collision" mesh="op_l_base_link" material="black" solref="0.05 0.5" />
-                            <body name="op_l_hand_narrow1_Link" pos="0 -0.0195 0.0565" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
-                              <inertial pos="0.0094685 0.0068806 6.5437e-05" quat="0.0002279298 -0.4880584 -0.8728107 0.0006270899" mass="0.025428" diaginertia="2.6556209e-06 1.6936794e-06 1.5500997e-06" />
-                              <joint name="left_gripper_joint" pos="0 0 0" axis="0 0 1" range="0.01 0.78" actuatorfrcrange="-50 50" class="gripper_active" />
-                              <geom class="visual" mesh="op_l_hand_narrow1_Link" material="black" />
-                              <geom class="collision" mesh="op_l_hand_narrow1_Link" material="black" solref="0.05 0.5" />
-                              <body name="op_l_hand_narrow2_Link" pos="0.030852 0.018551 0">
-                                <inertial pos="0.0088027 -0.007035 1.6424e-05" quat="0.6612073 -0.2593387 -0.6575475 -0.2513556" mass="0.0040132" diaginertia="1.7009061e-07 1.6656101e-07 5.0358381e-08" />
-                                <joint name="op_l_hand_narrow2_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                                <geom class="visual" mesh="op_l_hand_narrow2_Link" material="black" />
-                                <geom class="collision" mesh="op_l_hand_narrow2_Link" material="black" solref="0.05 0.5" />
-                                <body name="op_l_hand_narrow3_Link" pos="0.018118 -0.01574 0">
-                                  <inertial pos="0.012508 -0.0079729 9.4339e-05" quat="0.5750328 0.5750328 0.4115061 0.4115061" mass="0.018029" diaginertia="2.758427e-06 2.3252e-06 9.5227302e-07" />
-                                  <joint name="op_l_hand_narrow3_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                                  <geom class="visual" mesh="op_l_hand_narrow3_Link" material="black" />
-                                  <geom class="collision" mesh="op_l_hand_narrow3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
-                                  <body name="op_l_hand_narrow4_Link" pos="0 -0.0104 0" />
+                          <body name="gripper_l_base_link" pos="0 0 -0.049" quat="0.0007963267 0 0.9999997 0">
+                            <inertial pos="-0.00013356 1.5301e-05 0.03322" quat="0.9999989 -7.377385e-05 0.001447909 -0.0002697056" mass="0.23588" diaginertia="8.1548e-05 5.6921e-05 7.1611e-05" />
+                            <geom class="visual" mesh="gripper_l_base_link_visual" material="black" />
+                            <geom class="collision" mesh="gripper_l_base_link_collision" material="black" solref="0.05 0.5" />
+                            <body name="gripper_l_inner_link1" pos="0 -0.0195 0.0565" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
+                              <inertial pos="0.0094685 0.0068806 6.5437e-05" quat="0.0002279298 -0.4880584 -0.8728107 0.0006270899" mass="0.025428" diaginertia="1.9574e-06 2.3919e-06 1.5501e-06" />
+                              <joint name="idx31_gripper_l_inner_joint1" pos="0 0 0" axis="0 0 -1" range="-0.7853981633974483 0" class="gripper_active" />
+                              <geom class="visual" mesh="gripper_l_inner_link1_visual" material="black" />
+                              <geom class="collision" mesh="gripper_l_inner_link1_collision" material="black" solref="0.05 0.5" />
+                              <body name="gripper_l_inner_link3" pos="0.030852 0.018551 0">
+                                <inertial pos="0.0088027 -0.007035 1.6424e-05" quat="0.6612073 -0.2593387 -0.6575475 -0.2513556" mass="0.0040132" diaginertia="1.0307e-07 1.1385e-07 1.7009e-07" />
+                                <joint name="idx32_gripper_l_inner_joint3" pos="0 0 0" axis="0 0 -1" range="-2 2" class="gripper_passive" />
+                                <geom class="visual" mesh="gripper_l_inner_link3_visual" material="black" />
+                                <geom class="collision" mesh="gripper_l_inner_link3_collision" material="black" solref="0.05 0.5" />
+                                <body name="gripper_l_inner_link4" pos="0.018118 -0.01574 0">
+                                  <inertial pos="0.012508 -0.0079729 9.4339e-05" quat="0.5750328 0.5750328 0.4115061 0.4115061" mass="0.018029" diaginertia="1.1403e-06 2.5704e-06 2.3252e-06" />
+                                  <joint name="idx33_gripper_l_inner_joint4" pos="0 0 0" axis="0 0 1" range="-2 2" class="gripper_passive" />
+                                  <geom class="visual" mesh="gripper_l_inner_link4_visual" material="black" />
+                                  <geom class="collision" mesh="gripper_l_inner_link4_collision" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
+                                  <body name="gripper_l_inner_link2" pos="0 -0.010280428 0">
+                                    <inertial pos="0.014869 -0.0036066 0.00029307" quat="2.103793e-06 -0.8007941 -0.5989397 -6.780413e-07" mass="0.022591" diaginertia="4.3916e-06 4.737e-06 6.0445e-07" />
+                                    <joint name="idx39_gripper_l_inner_joint0" pos="0 0 0" axis="0 0 1" range="-2 2" class="gripper_passive" />
+                                  </body>
                                 </body>
                               </body>
                             </body>
-                            <body name="op_l_hand_narrow_loop_Link" pos="0 -0.021633 0.07387" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
-                              <inertial pos="0.014869 -0.0036066 0.00029307" quat="2.103793e-06 -0.8007941 -0.5989397 -6.780413e-07" mass="0.022591" diaginertia="4.7698122e-06 4.3587878e-06 6.0445e-07" />
-                              <joint name="op_l_hand_narrow_loop_joint" pos="0 0 0" axis="0 0 1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                              <geom class="visual" mesh="op_l_hand_narrow_loop_Link" material="black" />
-                              <geom class="collision" mesh="op_l_hand_narrow_loop_Link" material="black" solref="0.05 0.5" />
-                            </body>
-                            <body name="op_l_hand_wide1_Link" pos="0 0.0195 0.0565" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
-                              <inertial pos="0.0095051 -0.0068479 6.8268e-05" quat="0.0008433384 0.8724767 0.4886547 0.0004730209" mass="0.025428" diaginertia="2.655021e-06 1.6942795e-06 1.5500995e-06" />
-                              <joint name="op_l_hand_wide1_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                              <geom class="visual" mesh="op_l_hand_wide1_Link" material="black" />
-                              <geom class="collision" mesh="op_l_hand_wide1_Link" material="black" solref="0.05 0.5" />
-                              <body name="op_l_hand_wide2_Link" pos="0.030852 -0.018551 0">
-                                <inertial pos="0.0088027 0.007035 -1.6424e-05" quat="0.6575475 0.2513557 -0.6612073 0.2593386" mass="0.0040132" diaginertia="1.7009061e-07 1.6656101e-07 5.0358381e-08" />
-                                <joint name="op_l_hand_wide2_joint" pos="0 0 0" axis="0 0 1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                                <geom class="visual" mesh="op_l_hand_wide2_Link" material="black" />
-                                <geom class="collision" mesh="op_l_hand_wide2_Link" material="black" solref="0.05 0.5" />
-                                <body name="op_l_hand_wide3_Link" pos="0.018118 0.01574 0">
-                                  <inertial pos="0.016206 0.0094593 4.7668e-05" quat="3.417519e-06 -0.5743553 -0.8186061 6.472556e-06" mass="0.035835" diaginertia="1.1646133e-05 8.0944667e-06 4.6309e-06" />
-                                  <joint name="op_l_hand_wide3_joint" pos="0 0 0" axis="0 0 1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                                  <geom class="visual" mesh="op_l_hand_wide3_Link" material="black" />
-                                  <geom class="collision" mesh="op_l_hand_wide3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
-                                  <body name="op_l_hand_wide4_Link" pos="0 0.0104 0" />
+                            <body name="gripper_l_outer_link1" pos="0 0.0195 0.0565" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
+                              <inertial pos="0.0095051 -0.0068479 6.8268e-05" quat="0.0008433384 0.8724767 0.4886547 0.0004730209" mass="0.025428" diaginertia="1.9565e-06 2.3928e-06 1.5501e-06" />
+                              <joint name="idx41_gripper_l_outer_joint1" pos="0 0 0" axis="0 0 -1" range="0 0.7853981633974483" class="gripper_active" />
+                              <geom class="visual" mesh="gripper_l_outer_link1_visual" material="black" />
+                              <geom class="collision" mesh="gripper_l_outer_link1_collision" material="black" solref="0.05 0.5" />
+                              <body name="gripper_l_outer_link3" pos="0.030852 -0.018551 0">
+                                <inertial pos="0.0088027 0.007035 -1.6424e-05" quat="0.6575475 0.2513557 -0.6612073 0.2593386" mass="0.0040132" diaginertia="1.0307e-07 1.1385e-07 1.7009e-07" />
+                                <joint name="idx42_gripper_l_outer_joint3" pos="0 0 0" axis="0 0 -1" range="-2 2" class="gripper_passive" />
+                                <geom class="visual" mesh="gripper_l_outer_link3_visual" material="black" />
+                                <geom class="collision" mesh="gripper_l_outer_link3_collision" material="black" solref="0.05 0.5" />
+                                <body name="gripper_l_outer_link4" pos="0.018118 0.01574 0">
+                                  <inertial pos="0.016206 0.0094593 4.7668e-05" quat="3.417519e-06 -0.5743553 -0.8186061 6.472556e-06" mass="0.035835" diaginertia="8.5056e-06 1.1235e-05 4.6309e-06" />
+                                  <joint name="idx43_gripper_l_outer_joint4" pos="0 0 0" axis="0 0 -1" range="-2 2" class="gripper_passive" />
+                                  <geom class="visual" mesh="gripper_l_outer_link4_visual" material="black" />
+                                  <geom class="collision" mesh="gripper_l_outer_link4_collision" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
+                                  <body name="gripper_l_outer_link2" pos="0 0.010280428 0">
+                                    <inertial pos="0.016268 0.0040555 0.00030323" quat="2.137016e-06 0.5991189 0.80066 5.96701e-07" mass="0.025142" diaginertia="5.887e-06 6.236e-06 6.2389e-07" />
+                                    <joint name="idx49_gripper_l_outer_joint0" pos="0 0 0" axis="0 0 1" range="-2 2" class="gripper_passive" />
+                                  </body>
                                 </body>
                               </body>
                             </body>
-                            <body name="op_l_hand_wide_loop_Link" pos="0 0.021633 0.07387" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
-                              <inertial pos="0.016268 0.0040555 0.00030323" quat="2.137016e-06 0.5991189 0.80066 5.96701e-07" mass="0.025142" diaginertia="6.2690344e-06 5.8539656e-06 6.2389e-07" />
-                              <joint name="op_l_hand_wide_loop_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                              <geom class="visual" mesh="op_l_hand_wide_loop_Link" material="black" />
-                              <geom class="collision" mesh="op_l_hand_wide_loop_Link" material="black" solref="0.05 0.5" />
-                            </body>
+                            <body name="gripper_l_center_link" pos="0 0 0.14308" quat="0.707107 0 0 -0.707107" />
                           </body>
-
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                          </body>
                         </body>
                       </body>
                     </body>
                   </body>
                 </body>
-              </body>
-            </body>
             <body name="shoulderPitchRight" pos="0 -0.165094 0.25923" quat="0.984808 -0.173648 0 0">
               <inertial pos="0.00536737 -0.0269397 0.00010693" quat="0.0534521 0.70731 -0.0534944 0.702847" mass="0.216487" diaginertia="0.000381338 0.000323123 0.000187559" />
               <joint name="shoulderPitch_Right" pos="0 0 0" axis="0 1 0" range="-3.613 2.042" actuatorfrcrange="-65 65" class="joint_motor" />
@@ -374,68 +381,64 @@
                           <joint name="wristRoll_Right" pos="0 0 0" axis="1 0 0" range="-0.96 0.96" actuatorfrcrange="-6.4 6.4" class="joint_motor" />
                           <geom mesh="wristRollRight" material="silver" class="visual" />
                           <geom mesh="wristRollRight" class="collision" />
-                          <body name="op_r_base_link" pos="0 0 -0.049" quat="0.0007963267 0.9999997 0 0">
-                            <inertial pos="-5.52e-05 1.2341e-05 0.03296193" quat="0.9999989 -7.377385e-05 0.001447909 -0.0002697056" mass="0.25641368" diaginertia="0.00046351302 0.00044525 0.00010437698" />
-                            <geom class="visual" mesh="op_r_base_link" material="black" />
-                            <geom class="collision" mesh="op_r_base_link" material="black" solref="0.05 0.5" />
-                            <body name="op_r_hand_narrow1_Link" pos="0 -0.0195 0.0565" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
-                              <inertial pos="0.0094685 0.0068806 6.5437e-05" quat="0.0002279298 -0.4880584 -0.8728107 0.0006270899" mass="0.025428" diaginertia="2.6556209e-06 1.6936794e-06 1.5500997e-06" />
-                              <joint name="right_gripper_joint" pos="0 0 0" axis="0 0 1" range="0.01 0.78" actuatorfrcrange="-50 50" class="gripper_active" />
-                              <geom class="visual" mesh="op_r_hand_narrow1_Link" material="black" />
-                              <geom class="collision" mesh="op_r_hand_narrow1_Link" material="black" solref="0.05 0.5" />
-                              <body name="op_r_hand_narrow2_Link" pos="0.030852 0.018551 0">
-                                <inertial pos="0.0088027 -0.007035 1.6424e-05" quat="0.6612073 -0.2593387 -0.6575475 -0.2513556" mass="0.0040132" diaginertia="1.7009061e-07 1.6656101e-07 5.0358381e-08" />
-                                <joint name="op_r_hand_narrow2_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                                <geom class="visual" mesh="op_r_hand_narrow2_Link" material="black" />
-                                <geom class="collision" mesh="op_r_hand_narrow2_Link" material="black" solref="0.05 0.5" />
-                                <body name="op_r_hand_narrow3_Link" pos="0.018118 -0.01574 0">
-                                  <inertial pos="0.012508 -0.0079729 9.4339e-05" quat="0.5750328 0.5750328 0.4115061 0.4115061" mass="0.018029" diaginertia="2.758427e-06 2.3252e-06 9.5227302e-07" />
-                                  <joint name="op_r_hand_narrow3_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                                  <geom class="visual" mesh="op_r_hand_narrow3_Link" material="black" />
-                                  <geom class="collision" mesh="op_r_hand_narrow3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
-                                  <body name="op_r_hand_narrow4_Link" pos="0 -0.0104 0" />
+                          <body name="gripper_r_base_link" pos="0 0 -0.049" quat="0.0007963267 0.9999997 0 0">
+                            <inertial pos="-0.00013356 1.5301e-05 0.03322" quat="0.9999989 -7.377385e-05 0.001447909 -0.0002697056" mass="0.23588" diaginertia="8.1548e-05 5.6921e-05 7.1611e-05" />
+                            <geom class="visual" mesh="gripper_r_base_link_visual" material="black" />
+                            <geom class="collision" mesh="gripper_r_base_link_collision" material="black" solref="0.05 0.5" />
+                            <body name="gripper_r_inner_link1" pos="0 -0.0195 0.0565" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
+                              <inertial pos="0.0094685 0.0068806 6.5437e-05" quat="0.0002279298 -0.4880584 -0.8728107 0.0006270899" mass="0.025428" diaginertia="1.9574e-06 2.3919e-06 1.5501e-06" />
+                              <joint name="idx71_gripper_r_inner_joint1" pos="0 0 0" axis="0 0 -1" range="-0.7853981633974483 0" class="gripper_active" />
+                              <geom class="visual" mesh="gripper_r_inner_link1_visual" material="black" />
+                              <geom class="collision" mesh="gripper_r_inner_link1_collision" material="black" solref="0.05 0.5" />
+                              <body name="gripper_r_inner_link3" pos="0.030852 0.018551 0">
+                                <inertial pos="0.0088027 -0.007035 1.6424e-05" quat="0.6612073 -0.2593387 -0.6575475 -0.2513556" mass="0.0040132" diaginertia="1.0307e-07 1.1385e-07 1.7009e-07" />
+                                <joint name="idx72_gripper_r_inner_joint3" pos="0 0 0" axis="0 0 -1" range="-2 2" class="gripper_passive" />
+                                <geom class="visual" mesh="gripper_r_inner_link3_visual" material="black" />
+                                <geom class="collision" mesh="gripper_r_inner_link3_collision" material="black" solref="0.05 0.5" />
+                                <body name="gripper_r_inner_link4" pos="0.018118 -0.01574 0">
+                                  <inertial pos="0.012508 -0.0079729 9.4339e-05" quat="0.5750328 0.5750328 0.4115061 0.4115061" mass="0.018029" diaginertia="1.1403e-06 2.5704e-06 2.3252e-06" />
+                                  <joint name="idx73_gripper_r_inner_joint4" pos="0 0 0" axis="0 0 1" range="-2 2" class="gripper_passive" />
+                                  <geom class="visual" mesh="gripper_r_inner_link4_visual" material="black" />
+                                  <geom class="collision" mesh="gripper_r_inner_link4_collision" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
+                                  <body name="gripper_r_inner_link2" pos="0 -0.010280428 0">
+                                    <inertial pos="0.014869 -0.0036066 0.00029307" quat="2.103793e-06 -0.8007941 -0.5989397 -6.780413e-07" mass="0.022591" diaginertia="4.3916e-06 4.737e-06 6.0445e-07" />
+                                    <joint name="idx79_gripper_r_inner_joint0" pos="0 0 0" axis="0 0 1" range="-2 2" class="gripper_passive" />
+                                  </body>
                                 </body>
                               </body>
                             </body>
-                            <body name="op_r_hand_narrow_loop_Link" pos="0 -0.021633 0.07387" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
-                              <inertial pos="0.014869 -0.0036066 0.00029307" quat="2.103793e-06 -0.8007941 -0.5989397 -6.780413e-07" mass="0.022591" diaginertia="4.7698122e-06 4.3587878e-06 6.0445e-07" />
-                              <joint name="op_r_hand_narrow_loop_joint" pos="0 0 0" axis="0 0 1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                              <geom class="visual" mesh="op_r_hand_narrow_loop_Link" material="black" />
-                              <geom class="collision" mesh="op_r_hand_narrow_loop_Link" material="black" solref="0.05 0.5" />
-                            </body>
-                            <body name="op_r_hand_wide1_Link" pos="0 0.0195 0.0565" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
-                              <inertial pos="0.0095051 -0.0068479 6.8268e-05" quat="0.0008433384 0.8724767 0.4886547 0.0004730209" mass="0.025428" diaginertia="2.655021e-06 1.6942795e-06 1.5500995e-06" />
-                              <joint name="op_r_hand_wide1_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                              <geom class="visual" mesh="op_r_hand_wide1_Link" material="black" />
-                              <geom class="collision" mesh="op_r_hand_wide1_Link" material="black" solref="0.05 0.5" />
-                              <body name="op_r_hand_wide2_Link" pos="0.030852 -0.018551 0">
-                                <inertial pos="0.0088027 0.007035 -1.6424e-05" quat="0.6575475 0.2513557 -0.6612073 0.2593386" mass="0.0040132" diaginertia="1.7009061e-07 1.6656101e-07 5.0358381e-08" />
-                                <joint name="op_r_hand_wide2_joint" pos="0 0 0" axis="0 0 1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                                <geom class="visual" mesh="op_r_hand_wide2_Link" material="black" />
-                                <geom class="collision" mesh="op_r_hand_wide2_Link" material="black" solref="0.05 0.5" />
-                                <body name="op_r_hand_wide3_Link" pos="0.018118 0.01574 0">
-                                  <inertial pos="0.016206 0.0094593 4.7668e-05" quat="3.417519e-06 -0.5743553 -0.8186061 6.472556e-06" mass="0.035835" diaginertia="1.1646133e-05 8.0944667e-06 4.6309e-06" />
-                                  <joint name="op_r_hand_wide3_joint" pos="0 0 0" axis="0 0 1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                                  <geom class="visual" mesh="op_r_hand_wide3_Link" material="black" />
-                                  <geom class="collision" mesh="op_r_hand_wide3_Link" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
-                                  <body name="op_r_hand_wide4_Link" pos="0 0.0104 0" />
+                            <body name="gripper_r_outer_link1" pos="0 0.0195 0.0565" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
+                              <inertial pos="0.0095051 -0.0068479 6.8268e-05" quat="0.0008433384 0.8724767 0.4886547 0.0004730209" mass="0.025428" diaginertia="1.9565e-06 2.3928e-06 1.5501e-06" />
+                              <joint name="idx81_gripper_r_outer_joint1" pos="0 0 0" axis="0 0 -1" range="0 0.7853981633974483" class="gripper_active" />
+                              <geom class="visual" mesh="gripper_r_outer_link1_visual" material="black" />
+                              <geom class="collision" mesh="gripper_r_outer_link1_collision" material="black" solref="0.05 0.5" />
+                              <body name="gripper_r_outer_link3" pos="0.030852 -0.018551 0">
+                                <inertial pos="0.0088027 0.007035 -1.6424e-05" quat="0.6575475 0.2513557 -0.6612073 0.2593386" mass="0.0040132" diaginertia="1.0307e-07 1.1385e-07 1.7009e-07" />
+                                <joint name="idx82_gripper_r_outer_joint3" pos="0 0 0" axis="0 0 -1" range="-2 2" class="gripper_passive" />
+                                <geom class="visual" mesh="gripper_r_outer_link3_visual" material="black" />
+                                <geom class="collision" mesh="gripper_r_outer_link3_collision" material="black" solref="0.05 0.5" />
+                                <body name="gripper_r_outer_link4" pos="0.018118 0.01574 0">
+                                  <inertial pos="0.016206 0.0094593 4.7668e-05" quat="3.417519e-06 -0.5743553 -0.8186061 6.472556e-06" mass="0.035835" diaginertia="8.5056e-06 1.1235e-05 4.6309e-06" />
+                                  <joint name="idx83_gripper_r_outer_joint4" pos="0 0 0" axis="0 0 -1" range="-2 2" class="gripper_passive" />
+                                  <geom class="visual" mesh="gripper_r_outer_link4_visual" material="black" />
+                                  <geom class="collision" mesh="gripper_r_outer_link4_collision" material="black" solref="-250 -25" solimp="0.65 0.95 0.004 0.5 2" condim="4" friction="2.0 0.05 0.002" />
+                                  <body name="gripper_r_outer_link2" pos="0 0.010280428 0">
+                                    <inertial pos="0.016268 0.0040555 0.00030323" quat="2.137016e-06 0.5991189 0.80066 5.96701e-07" mass="0.025142" diaginertia="5.887e-06 6.236e-06 6.2389e-07" />
+                                    <joint name="idx89_gripper_r_outer_joint0" pos="0 0 0" axis="0 0 1" range="-2 2" class="gripper_passive" />
+                                  </body>
                                 </body>
                               </body>
                             </body>
-                            <body name="op_r_hand_wide_loop_Link" pos="0 0.021633 0.07387" quat="0.004648453 0.7070902 -0.004648057 0.7070928">
-                              <inertial pos="0.016268 0.0040555 0.00030323" quat="2.137016e-06 0.5991189 0.80066 5.96701e-07" mass="0.025142" diaginertia="6.2690344e-06 5.8539656e-06 6.2389e-07" />
-                              <joint name="op_r_hand_wide_loop_joint" pos="0 0 0" axis="0 0 -1" range="-3.1415927 3.1415927" class="gripper_passive" />
-                              <geom class="visual" mesh="op_r_hand_wide_loop_Link" material="black" />
-                              <geom class="collision" mesh="op_r_hand_wide_loop_Link" material="black" solref="0.05 0.5" />
-                            </body>
+                            <body name="gripper_r_center_link" pos="0 0 0.14308" quat="0.707107 0 0 -0.707107" />
                           </body>
                         </body>
                       </body>
                     </body>
                   </body>
-                </body>
-              </body>
-            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
             <body name="neckYaw_link" pos="-0.013 0 0.29855">
               <inertial pos="0.0228442 -0.00120876 0.0992634" quat="0.719761 0.0861591 0.0813325 0.684036" mass="0.399168" diaginertia="0.00132274 0.00131438 0.000128684" />
               <joint name="neckYaw" pos="0 0 0" axis="0 0 1" range="-1.571 1.571" actuatorfrcrange="-6.4 6.4" class="joint_motor" />
@@ -452,11 +455,7 @@
                 <camera name="neckPitch_camera_right" pos="0.085 -0.053  0.0385" xyaxes="0 -1 0 0 0 1" fovy="75" />
               </body>
             </body>
-          </body>
-        </body>
-      </body>
       <site name="imu" pos="0 0 0" />
-    </body>
   </worldbody>
   <actuator>
     <motor joint="hipPitch_Left" name="hipPitch_Left" ctrlrange="-230.0 230.0" />
@@ -481,7 +480,7 @@
     <motor joint="wristYaw_Left" name="wristYaw_Left" ctrlrange="-6.4 6.4" />
     <motor joint="wristPitch_Left" name="wristPitch_Left" ctrlrange="-6.4 6.4" />
     <motor joint="wristRoll_Left" name="wristRoll_Left" ctrlrange="-6.4 6.4" />
-    <motor joint="left_gripper_joint" name="left_gripper_joint" ctrlrange="-50.0 50.0" />
+    <motor joint="idx41_gripper_l_outer_joint1" name="idx41_gripper_l_outer_joint1" ctrlrange="-10.0 10.0" />
 
     
 
@@ -493,26 +492,14 @@
     <motor joint="wristPitch_Right" name="wristPitch_Right" ctrlrange="-6.4 6.4" />
     <motor joint="wristRoll_Right" name="wristRoll_Right" ctrlrange="-6.4 6.4" />
 
-    <motor joint="right_gripper_joint" name="right_gripper_joint" ctrlrange="-50.0 50.0" />
+    <motor joint="idx81_gripper_r_outer_joint1" name="idx81_gripper_r_outer_joint1" ctrlrange="-10.0 10.0" />
     
     <motor joint="neckYaw" name="neckYaw" ctrlrange="-6.4 6.4" />
     <motor joint="neckPitch" name="neckPitch" ctrlrange="-6.4 6.4" />
   </actuator>
   <equality>
-    <joint joint1="op_l_hand_narrow2_joint" joint2="left_gripper_joint" polycoef="0 0.02 0 0 0" />
-    <joint joint1="op_l_hand_narrow3_joint" joint2="left_gripper_joint" polycoef="0 0.4 0 0 0" />
-    <joint joint1="op_l_hand_narrow_loop_joint" joint2="left_gripper_joint" polycoef="0 1.5 0 0 0" />
-    <joint joint1="op_l_hand_wide1_joint" joint2="left_gripper_joint" polycoef="0 1 0 0 0" />
-    <joint joint1="op_l_hand_wide2_joint" joint2="left_gripper_joint" polycoef="0 0.02 0 0 0" />
-    <joint joint1="op_l_hand_wide3_joint" joint2="left_gripper_joint" polycoef="0 0.4 0 0 0" />
-    <joint joint1="op_l_hand_wide_loop_joint" joint2="left_gripper_joint" polycoef="0 1.5 0 0 0" />
-    <joint joint1="op_r_hand_narrow_loop_joint" joint2="right_gripper_joint" polycoef="0 1.5 0 0 0" />
-    <joint joint1="op_r_hand_wide1_joint" joint2="right_gripper_joint" polycoef="0 1 0 0 0" />
-    <joint joint1="op_r_hand_wide2_joint" joint2="right_gripper_joint" polycoef="0 0.02 0 0 0" />
-    <joint joint1="op_r_hand_wide3_joint" joint2="right_gripper_joint" polycoef="0 0.4 0 0 0" />
-    <joint joint1="op_r_hand_wide_loop_joint" joint2="right_gripper_joint" polycoef="0 1.5 0 0 0" />
-    <joint joint1="op_r_hand_narrow2_joint" joint2="right_gripper_joint" polycoef="0 0.02 0 0 0" />
-    <joint joint1="op_r_hand_narrow3_joint" joint2="right_gripper_joint" polycoef="0 0.4 0 0 0" />
+    <joint joint1="idx31_gripper_l_inner_joint1" joint2="idx41_gripper_l_outer_joint1" polycoef="0 -1 0 0 0" />
+    <joint joint1="idx71_gripper_r_inner_joint1" joint2="idx81_gripper_r_outer_joint1" polycoef="0 -1 0 0 0" />
   </equality>
   <sensor>
     <jointpos name="pos_hipPitch_Left" joint="hipPitch_Left" />
@@ -570,8 +557,10 @@
     <!-- <jointpos name="pos_R_pinky_DIP_joint" joint="R_pinky_DIP_joint" /> -->
     <jointpos name="pos_neckYaw" joint="neckYaw" />
     <jointpos name="pos_neckPitch" joint="neckPitch" />
-    <jointpos name="pos_left_gripper_joint" joint="left_gripper_joint" />
-    <jointpos name="pos_right_gripper_joint" joint="right_gripper_joint" />
+    <jointpos name="pos_idx41_gripper_l_outer_joint1" joint="idx41_gripper_l_outer_joint1" />
+    <jointpos name="pos_idx31_gripper_l_inner_joint1" joint="idx31_gripper_l_inner_joint1" />
+    <jointpos name="pos_idx81_gripper_r_outer_joint1" joint="idx81_gripper_r_outer_joint1" />
+    <jointpos name="pos_idx71_gripper_r_inner_joint1" joint="idx71_gripper_r_inner_joint1" />
     <jointvel name="vel_hipPitch_Left" joint="hipPitch_Left" />
     <jointvel name="vel_hipRoll_Left" joint="hipRoll_Left" />
     <jointvel name="vel_hipYaw_Left" joint="hipYaw_Left" />
@@ -627,8 +616,10 @@
     <!-- <jointvel name="vel_R_pinky_DIP_joint" joint="R_pinky_DIP_joint" /> -->
     <jointvel name="vel_neckYaw" joint="neckYaw" />
     <jointvel name="vel_neckPitch" joint="neckPitch" />
-    <jointvel name="vel_left_gripper_joint" joint="left_gripper_joint" />
-    <jointvel name="vel_right_gripper_joint" joint="right_gripper_joint" />
+    <jointvel name="vel_idx41_gripper_l_outer_joint1" joint="idx41_gripper_l_outer_joint1" />
+    <jointvel name="vel_idx31_gripper_l_inner_joint1" joint="idx31_gripper_l_inner_joint1" />
+    <jointvel name="vel_idx81_gripper_r_outer_joint1" joint="idx81_gripper_r_outer_joint1" />
+    <jointvel name="vel_idx71_gripper_r_inner_joint1" joint="idx71_gripper_r_inner_joint1" />
     <jointactuatorfrc name="force_hipPitch_Left" joint="hipPitch_Left" />
     <jointactuatorfrc name="force_hipRoll_Left" joint="hipRoll_Left" />
     <jointactuatorfrc name="force_hipYaw_Left" joint="hipYaw_Left" />
@@ -684,8 +675,8 @@
     <!-- <jointactuatorfrc name="force_R_pinky_DIP_joint" joint="R_pinky_DIP_joint" /> -->
     <jointactuatorfrc name="force_neckYaw" joint="neckYaw" />
     <jointactuatorfrc name="force_neckPitch" joint="neckPitch" />
-    <jointactuatorfrc name="force_left_gripper_joint" joint="left_gripper_joint" />
-    <jointactuatorfrc name="force_right_gripper_joint" joint="right_gripper_joint" />
+    <jointactuatorfrc name="force_idx41_gripper_l_outer_joint1" joint="idx41_gripper_l_outer_joint1" />
+    <jointactuatorfrc name="force_idx81_gripper_r_outer_joint1" joint="idx81_gripper_r_outer_joint1" />
     <accelerometer name="BodyAcc" site="imu" />
     <gyro name="BodyGyro" site="imu" />
     <framepos name="BodyPos" objtype="site" objname="imu" />
