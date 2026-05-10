@@ -47,7 +47,7 @@ This repository contains PNDbotics model files for simulation and control, inclu
 
 ### adam_pro_hand 主被动自由度说明
 
-`adam_pro_hand/` 中的手部模型已经补充为主被动自由度结构，行为与 `E:\TeleVision\assets\inspire_hand` 的联动方式保持大体一致。
+`adam_pro_hand/` 中的手部模型已经补充为主被动自由度结构。
 
 - 拇指：
   - `thumb_MCP_joint1` 作为独立主自由度保留。
@@ -115,7 +115,7 @@ This repository mainly contains the following robot model assets:
 
 ### adam_pro_hand Active-Passive DOF Notes
 
-The hand model in `adam_pro_hand/` has been updated with coupled active-passive finger DOFs, following the same overall linkage idea as `E:\TeleVision\assets\inspire_hand`.
+The hand model in `adam_pro_hand/` has been updated with coupled active-passive finger DOFs.
 
 - Thumb:
   - `thumb_MCP_joint1` remains an independent active DOF.
