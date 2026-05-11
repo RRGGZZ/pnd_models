@@ -221,7 +221,7 @@
                           <!-- <joint name="wristRoll_Left" pos="0 0 0" axis="1 0 0" range="-0.96 0.96" actuatorfrcrange="-6.4 6.4" /> -->
                           <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.752941 1" mesh="wristRollLeft" />
                           <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="wristRollLeft" />
-                          <body name="xhand_left_mount" pos="0 0 0" euler="0 3.1415926 1.5707963">
+                          <body name="xhand_left_mount" pos="0 0 -0.036" quat="0 -0.707106781187 0.707106781187 0">
                           <body name="left_hand_link">
                             <inertial pos="0.0101781679017777 0.00332669287155701 0.0570610488181997" mass="0.53930141" diaginertia="0.00064456 0.00046462 0.00027776" />
                             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.752941 1" mesh="left_hand_link" />
@@ -427,7 +427,7 @@
                           <!-- <joint name="wristRoll_Right" pos="0 0 0" axis="1 0 0" range="-0.96 0.96" actuatorfrcrange="-6.4 6.4" /> -->
                           <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.752941 1" mesh="wristRollRight" />
                           <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="wristRollRight" />
-                          <body name="xhand_right_mount" pos="0 0 0" euler="0 3.1415926 -1.5707963">
+                          <body name="xhand_right_mount" pos="0 0 -0.036" quat="0 0.707106781187 0.707106781187 0">
                           <body name="right_hand_link">
                             <inertial pos="0.010035126340455 -0.00366835056360167 0.0582695212892126" mass="0.53851506" diaginertia=".00064186 0.00046434 0.00027538" />
                             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.752941 1" mesh="right_hand_link" />
