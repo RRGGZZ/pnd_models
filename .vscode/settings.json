@@ -7,5 +7,11 @@
     "python.analysis.extraPaths": [
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
+    ],
+    "chat.tools.terminal.autoApprove": {
+        "/^cat << 'EOF' > get_mimics\\.py\nimport xml\\.etree\\.ElementTree as ET\n\ntree = ET\\.parse\\('/home/r/Downloads/pnd_models/adam_pro_hand/adam_pro\\.urdf'\\)\nroot = tree\\.getroot\\(\\)\nfor joint in root\\.findall\\('joint'\\):\n    mimic = joint\\.find\\('mimic'\\)\n    if mimic is not None:\n        print\\(f\"Joint: \\{joint\\.attrib\\['name'\\]\\} -> Mimic: \\{mimic\\.attrib\\['joint'\\]\\}, mult: \\{mimic\\.attrib\\.get\\('multiplier', '1'\\)\\}\"\\)\nEOF\npython3 get_mimics\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }
